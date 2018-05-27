@@ -7,3 +7,4 @@ public interface Controller extends  Runnable {
 
     public void addPedestrianInput(PedestrianInput pedestrianInput, String purpose);
 }
+

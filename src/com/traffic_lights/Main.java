@@ -1,5 +1,6 @@
 package com.traffic_lights;
 
+import com.traffic_lights.controller.Controller;
 import com.traffic_lights.controller.PedestrianCrossingController;
 import com.traffic_lights.controller.PedestrianCrossingLights;
 import com.traffic_lights.controller.TrafficLights;
@@ -17,10 +18,10 @@ public class Main {
         Thread userThread1 = new Thread(user1);
         PedestrianCrossingLights spcl = new SimplePedestrianCrossingLights("PS1");
         TrafficLights stl = new SimpleTrafficLights("TS1");
-        PedestrianCrossingController pedestrianCrossingController = new PedestrianCrossingController();
-        pedestrianCrossingController.addPedestrianCrossingLights(spcl,"");
-        pedestrianCrossingController.addTrafficLights(stl,"");
-        pedestrianCrossingController.addPedestrianInput(button1,"");
+        Controller pedestrianCrossingController = new PedestrianCrossingController();
+        pedestrianCrossingController.addPedestrianCrossingLights(spcl,"main");
+        pedestrianCrossingController.addTrafficLights(stl,"main");
+        pedestrianCrossingController.addPedestrianInput(button1,"main");
         Thread controllerThread = new Thread(pedestrianCrossingController);
         System.out.println(user1);
         System.out.println(spcl);

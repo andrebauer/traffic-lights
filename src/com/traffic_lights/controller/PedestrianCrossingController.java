@@ -20,17 +20,29 @@ public class PedestrianCrossingController implements Controller {
 
     @Override
     public void addPedestrianCrossingLights(PedestrianCrossingLights pedestrianCrossingLights, String purpose) {
-        this.pedestrianCrossingLights = pedestrianCrossingLights;
+        switch (purpose) {
+            case "main":
+                this.pedestrianCrossingLights = pedestrianCrossingLights;
+                break;
+        }
     }
 
     @Override
     public void addPedestrianInput(PedestrianInput pedestrianInput, String purpose) {
-        this.pedestrianInput = pedestrianInput;
+        switch (purpose) {
+            case "main":
+                this.pedestrianInput = pedestrianInput;
+                break;
+        }
     }
 
     @Override
     public void addTrafficLights(TrafficLights trafficLights, String purpose) {
-        this.trafficLights = trafficLights;
+        switch (purpose) {
+            case "main":
+                this.trafficLights = trafficLights;
+                break;
+        }
     }
 
     private void wait(int seconds) {
