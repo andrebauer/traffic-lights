@@ -2,6 +2,9 @@ package com.traffic_lights.view;
 
 import com.traffic_lights.controller.PedestrianCrossingLights;
 
+/**
+ * A basic PedestrianCrossingLights implementation that prints every change to its internal state to standard out.
+ */
 public class SimplePedestrianCrossingLights implements PedestrianCrossingLights {
 
     private String name;

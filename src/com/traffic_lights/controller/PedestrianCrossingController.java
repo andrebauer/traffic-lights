@@ -1,5 +1,8 @@
 package com.traffic_lights.controller;
 
+/**
+ *  A basic example for a Controller. You can only connect one peripheral of each type.
+ */
 public class PedestrianCrossingController implements Controller {
 
     private enum State {

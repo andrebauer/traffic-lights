@@ -2,6 +2,9 @@ package com.traffic_lights.view;
 
 import com.traffic_lights.controller.TrafficLights;
 
+/**
+ * A basic TrafficLights implementation that prints every change to its internal state to standard out.
+ */
 public class SimpleTrafficLights implements TrafficLights {
 
     private String name;
