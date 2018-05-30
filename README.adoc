@@ -1,0 +1,12 @@
+= Traffic Lights Prototype
+
+Import, build and run it with your favourite Java-IDE or just execute the
+following commands.
+
+[source,sh]
+----
+$ git clone https://github.com/bauerandre/traffic-lights.git
+$ cd traffic-lights/src
+$ javac com/traffic_lights/Main.java
+$ java com.traffic_lights.Main
+----
