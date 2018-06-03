@@ -9,7 +9,7 @@ public interface Controller extends  Runnable {
      * @param purpose The purpose of the TrafficLights, e.g. the lane or the direction. The expected values
      *                depend on the concrete implementation.
      */    
-    public void addTrafficLights(TrafficLights trafficLights,String purpose);
+    void addTrafficLights(TrafficLights trafficLights,String purpose);
 
     /**
      * Connects PedestrianCrossingLights to the Controller.
@@ -18,14 +18,15 @@ public interface Controller extends  Runnable {
      * @param purpose The purpose of the PedestrianCrossingLights, e.g. the lane they cross or the direction.
      *                The expected values depend on the concrete implementation.
      */
-    public void addPedestrianCrossingLights(PedestrianCrossingLights pedestrianCrossingLights, String purpose);
+    void addPedestrianCrossingLights(PedestrianCrossingLights pedestrianCrossingLights, String purpose);
     
     /**
      * Connects a PedestrianInput to the Controller.
      *
-     * @param pedestrianInput
-     * @param purpose
+     * @param pedestrianInput The PedestrianInput, that should be connected.
+     * @param purpose The purpose of the PedestrianInput, e.g. the lane they cross or the direction.
+     *                The expected values depend on the concrete implementation.
      */
-    public void addPedestrianInput(PedestrianInput pedestrianInput, String purpose);
+    void addPedestrianInput(PedestrianInput pedestrianInput, String purpose);
 }
 

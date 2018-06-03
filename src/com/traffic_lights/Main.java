@@ -9,6 +9,9 @@ import com.traffic_lights.user.RandomUser;
 import com.traffic_lights.view.SimplePedestrianCrossingLights;
 import com.traffic_lights.view.SimpleTrafficLights;
 
+/**
+ * Connects all components and starts the controller and user threads.
+ */
 public class Main {
 
     public static void main(String[] args) {

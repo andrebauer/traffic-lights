@@ -5,6 +5,9 @@ package com.traffic_lights.controller;
  */
 public class PedestrianCrossingController implements Controller {
 
+    /**
+     * The gloabal states of the signals system.
+     */
     private enum State {
         CarsCrossing,
         TransitionCarsToPedestrains,
@@ -17,10 +20,19 @@ public class PedestrianCrossingController implements Controller {
     private PedestrianInput pedestrianInput;
     private State state;
 
+    /**
+     * Creates a new PedestrianCrossingController object.
+     */
     public PedestrianCrossingController() {
 
     }
 
+    /**
+     * Set the PedestrianCrossingLights that are user by this controller.
+     *
+     * @param pedestrianCrossingLights The PedestrianCrossingLights, that should be connected.
+     * @param purpose The purpose of the PedestrianCrossingLights, this implementation accepts only 'main' as purpose.
+     */
     @Override
     public void addPedestrianCrossingLights(PedestrianCrossingLights pedestrianCrossingLights, String purpose) {
         switch (purpose) {
@@ -30,6 +42,12 @@ public class PedestrianCrossingController implements Controller {
         }
     }
 
+    /**
+     * Set the PedestrianInput that are used by this controller.
+     *
+     * @param pedestrianInput The PedestrianInput, that should be connected.
+     * @param purpose The purpose of the PedestrianInput, this implementation accepts only 'main' as purpose.
+     */
     @Override
     public void addPedestrianInput(PedestrianInput pedestrianInput, String purpose) {
         switch (purpose) {
@@ -39,6 +57,12 @@ public class PedestrianCrossingController implements Controller {
         }
     }
 
+    /**
+     * Set the TrafficLights that are used by this controller.
+     *
+     * @param trafficLights The TrafficLights, that should be connected.
+     * @param purpose The purpose of the TrafficLights, this implementation accepts only 'main' as purpose.
+     */
     @Override
     public void addTrafficLights(TrafficLights trafficLights, String purpose) {
         switch (purpose) {
@@ -48,6 +72,11 @@ public class PedestrianCrossingController implements Controller {
         }
     }
 
+    /**
+     * Forces this thread to sleep for the given period of seconds.
+     *
+      * @param seconds The time in seconds to wait.
+     */
     private void wait(int seconds) {
         try {
             Thread.sleep(seconds * 1000);
@@ -56,6 +85,9 @@ public class PedestrianCrossingController implements Controller {
         }
     }
 
+    /**
+     * Runs the controller. This thread is implemented as an infinite loop.
+     */
     @Override
     public void run() {
         state = State.CarsCrossing;
@@ -63,6 +95,7 @@ public class PedestrianCrossingController implements Controller {
         pedestrianCrossingLights.turn(PedestrianCrossingLights.State.Red);
         while (true) {
             switch (state) {
+
                 case CarsCrossing:
                     if (pedestrianInput.isSet()) {
                         pedestrianInput.pause();
@@ -80,10 +113,12 @@ public class PedestrianCrossingController implements Controller {
                     pedestrianCrossingLights.turn(PedestrianCrossingLights.State.Green);
                     state = State.PedestriansCrossing;
                     break;
+
                 case PedestriansCrossing:
                     wait(15);
                     state = State.TransitionPedestriansToCars;
                     break;
+
                 case TransitionPedestriansToCars:
                     pedestrianCrossingLights.turn(PedestrianCrossingLights.State.Red);
                     wait(5);
