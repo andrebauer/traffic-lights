@@ -5,7 +5,7 @@ following commands.
 
 [source,sh]
 ----
-$ git clone https://github.com/bauerandre/traffic-lights.git
+$ git clone https://github.com/andrebauer/traffic-lights.git
 $ cd traffic-lights/src
 $ javac com/traffic_lights/Main.java
 $ java com.traffic_lights.Main
