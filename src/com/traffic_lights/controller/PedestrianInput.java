@@ -11,15 +11,15 @@ public interface PedestrianInput {
      *
      * @return true iff the input is set since it was resumed.
      */
-    public boolean isSet();
+    boolean isSet();
 
     /**
      * Resumes the input, now it can be set by the user.
      */
-    public void resume();
+    void resume();
 
     /**
      * Pauses the input, it's state cannot be modified.
      */
-    public void pause();
+    void pause();
 }

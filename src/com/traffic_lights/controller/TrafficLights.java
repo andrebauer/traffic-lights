@@ -22,5 +22,5 @@ public interface TrafficLights {
      *
      * @param state The new state of the TrafficLights.
      */
-    public void turn(State state);
+    void turn(State state);
 }

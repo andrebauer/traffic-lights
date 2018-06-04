@@ -8,7 +8,7 @@ public interface PedestrianCrossingLights {
     /**
      * The possible states of PedestrianCrossingLights.
      */
-    public enum State {
+    enum State {
         Red,
         Green,
         Off
@@ -19,6 +19,6 @@ public interface PedestrianCrossingLights {
      *
      * @param state The new state for the PedestrianCrossingLights.
      */
-    public void turn(State state);
+    void turn(State state);
 }
 
