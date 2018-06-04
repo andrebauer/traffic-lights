@@ -3,6 +3,7 @@ package com.traffic_lights.controller;
 /**
  * The Interface of a PedestrianInput used by the Controller and provided by the input component.
  *
+ * @author Andr&eacute; Bauer
  */
 public interface PedestrianInput {
 

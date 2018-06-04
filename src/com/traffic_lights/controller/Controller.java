@@ -1,5 +1,10 @@
 package com.traffic_lights.controller;
 
+/**
+ * General Controller Interface used by the main class.
+ *
+ * @author Andr&eacute; Bauer
+ */
 public interface Controller extends  Runnable {
 
     /**

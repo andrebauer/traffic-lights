@@ -2,6 +2,8 @@ package com.traffic_lights.input;
 
 /**
  * Interface of a button used by input components and provied by user components.
+ *
+ * @author Andr&eacute; Bauer
  */
 public interface Button {
 

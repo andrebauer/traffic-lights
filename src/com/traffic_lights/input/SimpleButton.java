@@ -4,6 +4,8 @@ import com.traffic_lights.controller.PedestrianInput;
 
 /**
  * A basic implementation of an user input.
+ *
+ * @author Andr&eacute; Bauer
  */
 public class SimpleButton implements Button, PedestrianInput {
     private State state;

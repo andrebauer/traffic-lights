@@ -2,6 +2,9 @@ package com.traffic_lights.controller;
 
 /**
  * The Inteface for PedestrianCrossingLights used by the controller and provides by view components.
+ *
+ * @author Andr&eacute; Bauer
+ *
  */
 public interface PedestrianCrossingLights {
 

@@ -2,6 +2,8 @@ package com.traffic_lights.controller;
 
 /**
  * The Interface for TrafficLights used by the Controller and provided by view components.
+ *
+ * @author Andr&eacute; Bauer
  */
 public interface TrafficLights {
 

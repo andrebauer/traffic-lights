@@ -4,6 +4,8 @@ import com.traffic_lights.controller.TrafficLights;
 
 /**
  * A basic TrafficLights implementation that prints every change to its internal state to standard out.
+ *
+ * @author Andr&eacute; Bauer
  */
 public class SimpleTrafficLights implements TrafficLights {
 

@@ -6,6 +6,8 @@ import java.util.Random;
 
 /**
  * Simulations a Pedestrian that pushes a button by chance between zero and twenty seconds.
+ *
+ * @author Andr&eacute; Bauer
  */
 public class RandomUser implements  Runnable {
 

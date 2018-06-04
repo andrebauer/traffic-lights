@@ -2,6 +2,8 @@ package com.traffic_lights.controller;
 
 /**
  *  A basic example for a Controller. You can only connect one peripheral of each type.
+ *
+ * @author Andr&eacute; Bauer
  */
 public class PedestrianCrossingController implements Controller {
 

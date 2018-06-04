@@ -4,6 +4,8 @@ import com.traffic_lights.controller.PedestrianCrossingLights;
 
 /**
  * A basic PedestrianCrossingLights implementation that prints every change to its internal state to standard out.
+ *
+ * @author Andr&eacute; Bauer
  */
 public class SimplePedestrianCrossingLights implements PedestrianCrossingLights {
 

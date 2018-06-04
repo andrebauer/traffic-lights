@@ -11,6 +11,8 @@ import com.traffic_lights.view.SimpleTrafficLights;
 
 /**
  * Connects all components and starts the controller and user threads.
+ *
+ * @author Andr&eacute; Bauer
  */
 public class Main {
 
