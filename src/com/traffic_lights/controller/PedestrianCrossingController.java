@@ -45,7 +45,7 @@ public class PedestrianCrossingController implements Controller {
     }
 
     /**
-     * Set the PedestrianInput that are used by this controller.
+     * Set the PedestrianInput, that are used by this controller.
      *
      * @param pedestrianInput The PedestrianInput, that should be connected.
      * @param purpose The purpose of the PedestrianInput, this implementation accepts only 'main' as purpose.
