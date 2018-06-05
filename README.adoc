@@ -18,7 +18,7 @@ the following command.
 
 [source,sh]
 ----
-$ javadoc -d doc -author -private -sourcepath src/* -subpackages com.traffic_lights
+$ javadoc -d doc -author -private -sourcepath src -subpackages com.traffic_lights
 ----
 
 You can browse the generated documentation stating at `doc/index.html`, which
