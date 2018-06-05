@@ -1,6 +1,6 @@
 = Traffic Lights Prototype
 
-Import, build and run it with your favourite Java-IDE or just execute the
+Import, build and run it with your favourite Java IDE or just execute the
 following commands.
 
 [source,sh]
@@ -9,4 +9,14 @@ $ git clone https://github.com/andrebauer/traffic-lights.git
 $ cd traffic-lights/src
 $ javac com/traffic_lights/Main.java
 $ java com.traffic_lights.Main
+----
+
+== Dokumentation
+
+You can create the documentation in the command line with
+the following command.
+
+[source,sh]
+----
+$ javadoc -d doc -author -private -sourcepath src/* -subpackages com.traffic_lights
 ----
