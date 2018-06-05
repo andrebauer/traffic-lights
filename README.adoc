@@ -11,7 +11,7 @@ $ javac com/traffic_lights/Main.java
 $ java com.traffic_lights.Main
 ----
 
-== Dokumentation
+== Documentation
 
 You can create the documentation in the command line with
 the following command.
