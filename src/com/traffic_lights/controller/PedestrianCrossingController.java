@@ -30,7 +30,7 @@ public class PedestrianCrossingController implements Controller {
     }
 
     /**
-     * Set the PedestrianCrossingLights that are user by this controller.
+     * Set the PedestrianCrossingLights, that are user by this controller.
      *
      * @param pedestrianCrossingLights The PedestrianCrossingLights, that should be connected.
      * @param purpose The purpose of the PedestrianCrossingLights, this implementation accepts only 'main' as purpose.
