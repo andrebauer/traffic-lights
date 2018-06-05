@@ -20,3 +20,11 @@ the following command.
 ----
 $ javadoc -d doc -author -private -sourcepath src/* -subpackages com.traffic_lights
 ----
+
+You can browse the generated documentation stating at `doc/index.html`, which
+is the documentation root.
+
+[source,sh]
+----
+$ firefox doc/index.html
+----
